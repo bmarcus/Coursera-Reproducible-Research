@@ -1,6 +1,6 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-output: 
+output:
   html_document:
     keep_md: true
 ---
@@ -14,11 +14,11 @@ setwd("/Users/brad/Documents/development/repos/coursera/reproducible research/pr
 # Raw File location: https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip
 
 rawFile <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
-currDir <- getwd() 
+currDir <- getwd()
 rawFileFullPath <- paste(getwd(),"//raw data//repdata_data_activity.zip",sep="")
 
 download.file(url = rawFile,
-              destfile= rawFileFullPath, 
+              destfile= rawFileFullPath,
               method="curl")
 
 
@@ -33,7 +33,6 @@ unzip(zipfile = rawFileFullPath, exdir=".//raw data")
 
 
 ## What is the average daily activity pattern?
-
 
 
 ## Imputing missing values
