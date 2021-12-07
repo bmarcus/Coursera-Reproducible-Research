@@ -7,14 +7,14 @@ output:
 ## Loading and preprocessing the data (also unzip raw data)
 ```{r}
 # set working directory to "/Users/brad/Documents/development/repos/coursera/reproducible research/project 1"
-setwd("/Users/brad/Documents/development/repos/coursera/reproducible research/project 1/RepData_PeerAssessment1")
+setwd("/Users/brad/Documents/development/repos/_Coursera/reproducible research/project 1/RepData_PeerAssessment1")
 
 # Download the raw data file (zipped)
 # Raw File location: https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip
 
 raw_file <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
 curr_dir <- getwd() 
-raw_file_full_path <- paste(getwd(),"//raw data//repdata_data_activity.zip",sep="")
+raw_file_full_path <- paste(getwd(),"/raw data/repdata_data_activity.zip",sep="")
 
 download.file(url = raw_file,
               destfile= raw_file_full_path, 
