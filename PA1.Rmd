@@ -29,7 +29,6 @@ activity <- read.csv("./raw data/activity.csv",header = TRUE)
 summary(activity)
 ```
 
-
 ## Question 1: What is mean total number of steps taken per day?
 ### Calculate total number of steps per day
 ```{r}
